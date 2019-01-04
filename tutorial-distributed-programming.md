@@ -30,7 +30,7 @@ chatRepository.addGate("tcp://localhost:31415/?keep");
 
 ## 3.3 Accesing a remote space
 
-A remote tuple space, possibly residing on another device, accepts the same operations as a local tuple space. The only difference is that we need to create the space slightly differently, namely with the `RemoteSpace` constructor. In our example Alice and her friends con connect to the chatoom `room1` it with
+A remote tuple space, possibly residing on another device, accepts the same operations as a local tuple space. The only difference is that we need to create the space slightly differently, namely with the `RemoteSpace` constructor. In our example Alice and her friends can connect to the chatoom `room1` it with
 
 ```java
 RemoteSpace chat = new RemoteSpace("tcp://chathost:31415/room1?keep")
